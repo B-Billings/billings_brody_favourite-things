@@ -9,7 +9,8 @@ import {getData} from "./modules/dataMiner.js";
         function openbox() {
             lightbox.classlist.remove('hidden');
         }
-    
+        
+        //Couldnt solve this part i dont know why but it wouldnt allow me to call upon the function
         //function closelight(){
         //    console.log("fired from the close");
         //    lightbox.classList.add('hidden');
@@ -36,6 +37,6 @@ import {getData} from "./modules/dataMiner.js";
     } 
 
     btns.forEach(addEventListener("click", getinfo,openbox));
-    close.addEventListener("click", getinfo, closelight);
+    //close.addEventListener("click",closelight);
 
 })();
