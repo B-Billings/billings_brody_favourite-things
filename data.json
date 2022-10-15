@@ -13,8 +13,8 @@
     },
     "Item3": {
         "name":"McLaren",
-        "description":"McLaren make some of the most beautifully designed cars in the world.... in my opinion so that why it has earned the place as my favourite automotive manufacturer",
-        "favouritepart": "My favourite car in the world is the Mclaren P1 GTR pictured above.... its hard to disagree.....",
+        "description":"McLaren make some of the most beautifully designed cars in the world.... in my opinion.... So that why it has earned the place as my favourite automotive manufacturer",
+        "favouritepart": "My favourite car in the world is the Mclaren P1 GTR pictured above.... Its hard to disagree now isnt it.....",
         "Image":"mclarenp1.jpg"
     }
   }
