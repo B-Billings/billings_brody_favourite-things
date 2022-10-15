@@ -1,8 +1,19 @@
-body {
-    background-color: $main-bg;
-    color: $main-colour;
+.hidden{
+    display: none;
+}
+h1{
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+}
 
-    font-size: $main-size;
+h2{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
 
-    // more generic rules here
+p{
+    font-size: 1em;
+    padding: 0.5em;
+    color: rgb(255, 255, 255);
 }

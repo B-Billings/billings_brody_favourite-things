@@ -1,0 +1,33 @@
+.jsonimage{
+    max-height: 500px;
+}
+
+.filleditems{
+    display: none;
+    max-width: 100%;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    overflow: none;
+    padding: 4em;
+    width: 90%;
+    max-height: 200px;  
+}
+.filleditems img{
+width: 50%;
+padding: 1em;
+    
+}
+.iteminfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    border-radius: 2em;
+    max-width: 100%;
+    margin: auto;
+    padding: 1em;
+
+
+}
