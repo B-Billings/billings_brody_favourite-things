@@ -4,37 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="css/main.css">
-    
-    <title>Learning NPM and SASS</title>
+    <title> Brody Billings Favourite Things</title>
 </head>
 <body>
-    <h1 class="hidden">This is a team page</h1>
-
-    <section id="team-section"></section>
-
-
-    <!-- template tags should go at the bottom of the HTML markup -->
-    <!-- template tags don't get rendered, but their content does -->
-    <template id="bio-template">
-        <section class="bio_panel">
-            <div class="avatar">
-                <!-- src gets added dynamically -->
-                <img src="" alt="prof image">
-            </div>
-            <!-- slug is just placeholder - this will get replaced -->
-            <h2 class="p_name">slug</h2>
-            <h3 class="p_role">slug</h3>
-            <p class="p_nickname">slug</p>
+ <main>
+    <header>
+        <section class="logosec">
+            <h1 class="hidden">Logo area</h1>
+                <div id="logocenter">
+                    <img id="logo" src="images/billings_brody_logo.svg" alt="logo">
+                </div>
         </section>
-    </template>
 
-    <!-- your JS always goes here -->
-    <!-- make the JS file wait to be parsed with the defer attribute (last thing the DOM engine reads)-->
 
-    <!-- the type attribute tells the JS engine that we're using modules (standalone JS files) -->
-    <!-- <script src="js/modules/data.js"></script> -->
-    <script src="js/main.js" type="module" defer></script>
+        <section  class="topper">
+            <h1 class="hidden">selector area</h1>
+                <div class="favourites" id="Item1">
+                    <h3 class="btnstyle">Artist</h3>
+                </div>
+                <div class="favourites" id="Item2">
+                    <h3 class="btnstyle">Sport</h3>
+                </div>
+                <div class="favourites" id="Item3">
+                    <h3 class="btnstyle">Automotive Brand</h3>
+                </div>
+        </section>
+    </header>
+
+        <section class="filleditems" id="myinformation">
+            <h1 class="hidden"> Lightbox pop</h1>
+        <template id="bio-template">
+            <section class="iteminfo">
+                        <h1 class="name"> </h1> 
+                <div> 
+                    <img class="jsonimage" src="" alt="favourite-image">
+                </div>
+            
+                <div> 
+                    <h2 class="description"> </h2> 
+                </div>
+
+                <div> 
+                    <p class="favouritepart"></p> 
+                </div>
+
+                <div id="close">
+                    <button onClick="window.location.reload()" id="closingtime">CLOSE</button>
+                </div>
+
+            </section>
+        </template>
+    </section>
+
+    <section class="aboutme">
+        <h1> Brody Billings Favourite Things</h1> 
+            <div> 
+                <img src="images/Brody.jpg"  alt="Brody Image">
+            </div>
+            <div> 
+                <h2 class="description"> </h2> 
+            </div>
+            <div> 
+                <p> Assignment Desc</p> 
+            </div>
+    </section>
+</main>
+    <script src="js/main.js" defer type="module"> </script>
 </body>
 </html>
