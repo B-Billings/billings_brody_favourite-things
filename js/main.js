@@ -1,40 +1,41 @@
-// imports always go at the top of the file
-// this is called an IIFE (immediately invoked function expression)
-import { getData } from "./modules/dataMiner.js";
-
-// it's a pretty common JavaScript programming pattern
-// also called a module file
+import {getData} from "./modules/dataMiner.js";
 (() => {
-    console.log('fired!');
+    let theTemplate = document.querySelector("#bio-template").content,
+    lightbox = document.querySelector(".lightbox"),
+        btns = document.querySelectorAll(".favourites"),
+        close = document.querySelector("#close"), 
+        activebtns; 
 
-    let theTeam = document.querySelector('#team-section'),
-        theTemplate = document.querySelector('#bio-template').content;
-
-        // debugger;
-
-    function buildTeam(data) {
-        // get all the keys (names) from the data object and use that to iterate through the data
-        debugger;
+        function openbox() {
+            lightbox.classlist.remove('hidden');
+        }
+    
+        //function closelight(){
+        //    console.log("fired from the close");
+        //    lightbox.classList.add('hidden');
+        //}
         
-        const people = Object.keys(data); // Object.keys creates an array
-
-        people.forEach(prof => {
-            // copy the template's contents
-            let panel = theTemplate.cloneNode(true);
-
-            // get a reference to the template's elements
-            let containers = panel.firstElementChild.children;
-
-            // grab the image from the object and set it as the source 
-            containers[0].querySelector('img').src = `images/${data[prof].avatar}`;
-
-            containers[1].textContent = data[prof].name;
-            containers[2].textContent = data[prof].role;
-            containers[3].textContent = data[prof].nickname;
-
-            theTeam.appendChild(panel);
-        })
+    function getinfo (event) {
+        getData("./data.json", datachange);  
+        activebtns = event.target.parentElement.id;
     }
+    
 
-    getData(buildTeam);
+    function datachange(i) {
+
+        let box = theTemplate.cloneNode(true),
+        containers = box.firstElementChild.children;
+        containers[0].textContent = i[activebtns].name;
+        containers[1].querySelector('img').src = `images/${i[activebtns].Image}`;    
+        containers[2].textContent = i[activebtns].description;
+        containers[3].textContent = i[activebtns].favouritepart;
+        lightbox.innerHTML = "";
+        lightbox.appendChild(box);
+    
+
+    } 
+
+    btns.forEach(addEventListener("click", getinfo,openbox));
+    close.addEventListener("click", getinfo, closelight);
+
 })();
