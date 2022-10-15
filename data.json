@@ -1,32 +1,20 @@
 {
-    "Justin": {
-        "name":"Justin",
-        "role":"Coordinator",
-        "nickname":"i don't know",
-        "avatar":"justin.jpg"
+    "Item1": {
+        "name":"KAWS",
+        "description":"KAWS otherwise known as Brian Donnelly is my favourite modern artist. He creates everything from clothing and scukotures to the typical drawings and painted pieces ",
+        "favouritepart": "My favourite pieces that he has created is anything from the companion line-up some of which are shown in the image",
+        "Image":"KAWS.jpg"
     },
-    "John": {
-        "name":"John",
-        "role":"super chill prof",
-        "nickname":"just john",
-        "avatar":"john.jpg"
+    "Item2": {
+        "name":"F1",
+        "description":"Over the last 5 years I have became in love with F1. From the early mornings watching the Australian GP (3am EST) or the Japanese GP (1am EST) to watching it at a more normal time of 9am with a coffee its all exciting to me",
+        "favouritepart": "My favourite team has to be McLaren which you will understand by clicking the last tab.....",
+        "Image":"mclaren.jpg"
     },
-    "Joe": {
-        "name":"Joe",
-        "role":"Prof",
-        "nickname":"Teddy Bear",
-        "avatar":"joe.jpg"
-    },
-    "Jarrod": {
-        "name":"Jarrod",
-        "role":"Design Ninja",
-        "nickname":"Zoolander",
-        "avatar":"jarrod.jpg"
-    },
-    "Trevor": {
-        "name":"Trevor",
-        "role":"Dark Arts Prof",
-        "nickname":"T Dazzle",
-        "avatar":"trevor.jpg"
+    "Item3": {
+        "name":"McLaren",
+        "description":"McLaren make some of the most beautifully designed cars in the world.... in my opinion so that why it has earned the place as my favourite automotive manufacturer",
+        "favouritepart": "My favourite car in the world is the Mclaren P1 GTR pictured above.... its hard to disagree.....",
+        "Image":"mclarenp1.jpg"
     }
   }
